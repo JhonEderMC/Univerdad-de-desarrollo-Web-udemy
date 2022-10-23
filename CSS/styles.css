@@ -19,3 +19,7 @@ a:active {
     color: #d1495b;
     text-decoration: underline;
 }
+
+a > img {
+    height: 20px;
+}
