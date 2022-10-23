@@ -1,0 +1,12 @@
+.linkButton > a:link, a:visited {
+    color: white;
+    background-color: #6d597a;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.linkButton > a:hover, a:active {
+    background-color: #b56576;
+    text-decoration: none;
+}
