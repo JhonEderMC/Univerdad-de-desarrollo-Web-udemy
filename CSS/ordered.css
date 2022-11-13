@@ -1,0 +1,15 @@
+ol {
+    list-style: none;
+    counter-reset: count;
+}
+ol li {
+    counter-increment: count;
+}
+
+ol li::before {
+    content: 'Course ' counter(count) ' - ';
+    color: #ff6f00;
+} 
+ol li::after {
+    content: '.';
+}
