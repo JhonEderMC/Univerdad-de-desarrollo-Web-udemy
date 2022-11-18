@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1.title {
+    color: #f72585;
+    text-align: center;
+    margin: 15px
+}
+.card {
+    width: 70%;
+    text-align: center;
+    background-color: #f1faee;
+    border: solid 5px #3f37c9;
+    margin: 10px 100px;
+    padding: 15px;
+}
+.card h2 {
+    color: #3f37c9;
+}
+.card p {
+    color: #94d2bd;
+}
+.card p span.creator  {
+    color: #f72585;
+}
+
