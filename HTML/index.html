@@ -8,10 +8,13 @@
 </head>
 <body>
     <h1>Forms in HTML</h1>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" placeholder="Enter a name">
-    <label for="lastName">LastName:</label>
-    <input type="text" id="lastName" name="lastName" placeholder="Enter a last name">
-    <button type="submit">Send</button>
+    <form action="">
+        <label for="name">Name*:</label>
+        <input type="text" id="name" name="name" placeholder="Enter a name" required="true">
+        <label for="lastName">LastName*:</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Enter a last name" required="true">
+        <button type="submit">Send</button>
+        <button type="submit" formnovalidate="formnovalidate">Send without validation</button>        
+    </form>
 </body>
 </html>
