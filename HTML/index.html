@@ -8,11 +8,15 @@
 </head>
 <body>
     <h1>Forms in HTML</h1>
-    <form action="">
+    <form action="" method="post">
         <label for="name">Name*:</label>
         <input type="text" id="name" name="name" placeholder="Enter a name" required="true">
+        <br>
         <label for="lastName">LastName*:</label>
         <input type="text" id="lastName" name="lastName" placeholder="Enter a last name" required="true">
+        <br>
+        <label for="password">Password*:</label>
+        <input type="password" name="paswword" id="paswword" required="true">
         <button type="submit">Send</button>
         <button type="submit" formnovalidate="formnovalidate">Send without validation</button>        
     </form>
