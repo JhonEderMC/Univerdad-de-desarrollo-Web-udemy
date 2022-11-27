@@ -9,69 +9,72 @@
 <body>
     <h1>Forms in HTML</h1>
     <form action="" method="post">
-        <label for="name">Name*:</label>
-        <input type="text" id="name" name="name" placeholder="Enter a name" required="true">
-        <br>
-        <label for="lastName">LastName*:</label>
-        <input type="text" id="lastName" name="lastName" placeholder="Enter a last name" required="true">
-        <br>
-        <label for="password">Password*:</label>
-        <input type="password" name="paswword" id="paswword" required="true">
-        <br>
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email">
-        <br>
-        <label for="phone">Phone</label>
-        <input type="tel" name="phone" id="phone">
-        <br>
-        <label for="age">Age:</label>
-        <input type="number" name="age" id="age">
-        <br>
-        <label for="gender">Gender:</label>
-        <br>        
-        <input type="radio" name="gender" id="female" value="female">
-        <label for="female">Female</label>
-        <br>        
-        <input type="radio" name="gender" id="male" value="male">
-        <label for="male">Male</label>
-        <br>
-        <label for="music">Select your favorite Music:</label>
-        <br>
-        <input type="checkbox" name="music" id="merengue" value="merengue">
-        <label for="merengue">Merengue</label>
-        <br>
-        <input type="checkbox" name="music" id="rock" value="Rock">
-        <label for="rock">Rock</label>
-        <br>       
-        <input type="checkbox" name="music" id="reggae" value="reggae">
-        <label for="reggae">Reggae</label>
-        <br>
-        <input type="checkbox" name="music" id="reggaeton"  value="reggaeton">
-        <label for="reggaeton">Reggaeton</label>
-        <br>
-        <input type="checkbox" name="music" id="salsa" value="salsa">
-        <label for="Salsa">Salsa</label>
-        <br>
-        <input type="checkbox" name="music" id="vallenato" value="vallenato">
-        <label for="vallenato">Vallenato</label>
-        <br>
-        <label for="cars">Select your favorite car brand:</label>
-        <select id="cars" name="cars" multiple="3">
-            <option value="chevrolet">Chevrolet</option>
-            <option value="mazda">Mazda</option>
-            <option value="renoult">Renoult</option>
-            <option value="mercedez">Mercedez</option>
-            <option value="volkswagen" selected>Volkswagen</option>
-            <option value="ford">Ford</option>
-            <option value="mitsubishi">mitsubishi</option>
-        </select>
-        <br>
-        <label for="comment">Enter your comments:</label>
-        <br>
-        <textarea name="comment" id="comment" cols="60" rows="7"></textarea>
-        <br>        
-        <button type="submit">Send</button>
-        <button type="submit" formnovalidate="formnovalidate">Send without validation</button>        
+        <fieldset>
+            <legend>Personal data:</legend>
+                <label for="name">Name*:</label>
+            <input type="text" id="name" name="name" placeholder="Enter a name" required="true">
+            <br>
+            <label for="lastName">LastName*:</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter a last name" required="true">
+            <br>
+            <label for="password">Password*:</label>
+            <input type="password" name="paswword" id="paswword" required="true">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+            <br>
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" id="phone">
+            <br>
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age">
+            <br>
+            <label for="gender">Gender:</label>
+            <br>        
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+            <br>        
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            <br>
+            <label for="music">Select your favorite Music:</label>
+            <br>
+            <input type="checkbox" name="music" id="merengue" value="merengue">
+            <label for="merengue">Merengue</label>
+            <br>
+            <input type="checkbox" name="music" id="rock" value="Rock">
+            <label for="rock">Rock</label>
+            <br>       
+            <input type="checkbox" name="music" id="reggae" value="reggae">
+            <label for="reggae">Reggae</label>
+            <br>
+            <input type="checkbox" name="music" id="reggaeton"  value="reggaeton">
+            <label for="reggaeton">Reggaeton</label>
+            <br>
+            <input type="checkbox" name="music" id="salsa" value="salsa">
+            <label for="Salsa">Salsa</label>
+            <br>
+            <input type="checkbox" name="music" id="vallenato" value="vallenato">
+            <label for="vallenato">Vallenato</label>
+            <br>
+            <label for="cars">Select your favorite car brand:</label>
+            <select id="cars" name="cars" multiple="3">
+                <option value="chevrolet">Chevrolet</option>
+                <option value="mazda">Mazda</option>
+                <option value="renoult">Renoult</option>
+                <option value="mercedez">Mercedez</option>
+                <option value="volkswagen" selected>Volkswagen</option>
+                <option value="ford">Ford</option>
+                <option value="mitsubishi">mitsubishi</option>
+            </select>
+            <br>
+            <label for="comment">Enter your comments:</label>
+            <br>
+            <textarea name="comment" id="comment" cols="60" rows="7"></textarea>
+            <br>        
+            <button type="submit">Send</button>
+            <button type="submit" formnovalidate="formnovalidate">Send without validation</button>             
+        </fieldset>               
     </form>
 </body>
 </html>
