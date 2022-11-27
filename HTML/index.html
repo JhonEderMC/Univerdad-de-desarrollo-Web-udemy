@@ -35,7 +35,7 @@
         <input type="radio" name="gender" id="male" value="male">
         <label for="male">Male</label>
         <br>
-        <label for="music">Music:</label>
+        <label for="music">Select your favorite Music:</label>
         <br>
         <input type="checkbox" name="music" id="merengue" value="merengue">
         <label for="merengue">Merengue</label>
@@ -54,6 +54,17 @@
         <br>
         <input type="checkbox" name="music" id="vallenato" value="vallenato">
         <label for="vallenato">Vallenato</label>
+        <br>
+        <label for="cars">Select your favorte car brand:</label>
+        <select id="cars" name="cars" multiple="3">
+            <option value="chevrolet">Chevrolet</option>
+            <option value="mazda">Mazda</option>
+            <option value="renoult">Renoult</option>
+            <option value="mercedez">Mercedez</option>
+            <option value="volkswagen" selected>Volkswagen</option>
+            <option value="ford">Ford</option>
+            <option value="mitsubishi">mitsubishi</option>
+        </select>
         <br>
         <button type="submit">Send</button>
         <button type="submit" formnovalidate="formnovalidate">Send without validation</button>        
