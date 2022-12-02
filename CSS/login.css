@@ -23,3 +23,28 @@ body {
     color: #4cc9f0;
     text-align: center;
 }
+
+.content .element label {
+    color: #fff;
+}
+
+.content .element input {
+    width: 90%;
+    padding: 2% 0;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 2px #fff;
+    margin: 4% 0;
+}
+
+.content .element button[type="submit"] {
+    background-color: #f72585;
+    border: none;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;    
+    margin: 3% 35%;
+    padding: 2%;
+    cursor: pointer;
+}
