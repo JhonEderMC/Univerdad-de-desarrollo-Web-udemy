@@ -1,15 +1,4 @@
-* {
-    background-color: gold;
-}
-#title {
+h1, h2, p {
     color: crimson;
     text-align: center;
-}
-
-.center {
-    text-align: center;
-}
-
-.big_text {
-    font-size: 140%;
 }
