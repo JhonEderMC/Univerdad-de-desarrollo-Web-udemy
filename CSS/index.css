@@ -5,5 +5,8 @@ h1 {
 
 div {
     padding: 10px;
-    border: 15px solid #bde0fe;
+    border: 15px solid #264653;
+    margin: 20px;
+    background-color: #bde0fe;
+    width: 300px;
 }
