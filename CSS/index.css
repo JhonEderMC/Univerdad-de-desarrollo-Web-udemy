@@ -9,4 +9,5 @@ div {
     margin: 20px;
     background-color: #bde0fe;
     width: 300px;
+    outline:  10px solid #f4a261;
 }
