@@ -10,4 +10,5 @@ div {
     background-color: #bde0fe;
     width: 300px;
     outline:  10px solid #f4a261;
+    outline-offset: 5px;
 }
