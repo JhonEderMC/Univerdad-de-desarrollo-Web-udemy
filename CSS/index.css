@@ -3,7 +3,7 @@ h1 {
     text-align: center;
 }
 
-div {
+.div {
     padding: 10px;
     border: 15px solid #264653;
     margin: 20px;
@@ -13,4 +13,12 @@ div {
     outline:  10px solid #f4a261;
     outline-offset: 5px;
     box-sizing: border-box;
+}
+
+p.center {
+    margin:0 auto;
+    max-width: 200px;
+    border: black 3px solid;
+    background-color: #bde0fe;
+    text-align: center;
 }
