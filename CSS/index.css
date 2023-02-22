@@ -22,3 +22,7 @@ p.center {
     background-color: #bde0fe;
     text-align: center;
 }
+
+p.intern {
+    margin: inherit;
+}
