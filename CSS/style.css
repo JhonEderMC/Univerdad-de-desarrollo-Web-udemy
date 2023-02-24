@@ -1,0 +1,23 @@
+h1 {
+    text-align: center;
+    color: #e63946;
+}
+
+.box {
+    padding: 10px;
+    color: white;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    margin: 5px auto;
+    font-size: 10px;
+    float: left;
+}
+
+.crimson {
+    background-color: crimson;
+}
+
+.pink {
+    background-color: lightpink;
+}
