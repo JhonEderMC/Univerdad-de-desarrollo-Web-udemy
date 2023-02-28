@@ -3,4 +3,10 @@ body {
     color: cornsilk;
     background-image: url('../IMG/fondo.png');
     background-repeat: no-repeat ;
+    background-position: right top;
+    background-attachment: fixed;
+}
+
+h1 {
+    text-align: center;
 }
