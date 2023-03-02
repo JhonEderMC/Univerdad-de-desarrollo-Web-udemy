@@ -4,4 +4,22 @@ h1 {
     text-align: center;
     text-transform: uppercase;
     text-shadow: 2px 2px 2px #ced4da;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    text-decoration: overline;
+}
+
+.box {
+    padding: 15px;
+    margin: auto;
+    width: 70%;
+    background-color: #219bec;
+    border-radius: 5px;
+    color: white;
+}
+
+.text {
+    text-align: justify;
+    direction: ltr;
+    text-decoration: none;
 }
