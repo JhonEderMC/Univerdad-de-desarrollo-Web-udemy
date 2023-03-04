@@ -1,0 +1,26 @@
+h1 {
+    color: #ef476f;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #ced4da;
+}
+
+.box {
+    text-align: center;
+    padding: 5px;
+    width: 40%;
+    height: 80px;
+    margin: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    color: white;
+    float: left;
+}
+
+.box.serif {
+    background-color: #5a189a;
+}
+
+.font_times {
+    font-family: 'Times New Roman',  Times, serif;
+}
