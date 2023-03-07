@@ -23,6 +23,12 @@ h1 {
 .box.sans_serif {
     background-color: #00b4d8;
 }
+.box.monospace {
+    background-color: #f15bb5;
+}
+.box.cursive {
+    background-color: #ff8500;
+}
 
 .font_times {
     font-family: 'Times New Roman',  Times, serif;
@@ -35,4 +41,10 @@ h1 {
 }
 .font_verdana {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.font_curier {
+    font-family: 'Courier New', Courier, monospace;
+}
+.font_lucida {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
