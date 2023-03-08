@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap');
+
+
 h1 {
     color: #ef476f;
     text-align: center;
@@ -59,4 +63,10 @@ h1 {
 }
 .font_lucida {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.font_sofia {
+    font-family: Sofia, cursive;
+}
+.font_roboto_mono {
+    font-family: 'Roboto Mono', monospace;
 }
