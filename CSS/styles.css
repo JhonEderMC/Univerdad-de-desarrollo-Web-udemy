@@ -9,3 +9,12 @@ h1, div, p {
 .display_inline {
     display: inline;
 }
+.display_block {
+    display: block;
+}
+.display_none {
+    display: none;
+}
+.visibility_hidden {
+    visibility: hidden;
+}
