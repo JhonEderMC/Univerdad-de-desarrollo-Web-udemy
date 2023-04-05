@@ -1,0 +1,10 @@
+h1{
+    text-align: center;
+    color: chocolate;
+}
+.div_center {
+    position: static; /* postion static is defautl value */
+    max-width: 50%;
+    border: solid 2px firebrick;
+    margin: auto;
+}
