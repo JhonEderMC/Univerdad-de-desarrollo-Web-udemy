@@ -1,0 +1,11 @@
+h1{
+    text-align: center;
+    color: chocolate;
+}
+div {
+    border: solid 2px crimson;
+    max-width: 50%;   
+    position: fixed;
+    top: 100px;
+    left: 250px;
+}
