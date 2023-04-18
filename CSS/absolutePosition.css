@@ -1,0 +1,22 @@
+h1{
+    text-align: center;
+    color: chocolate;
+}
+
+.width_and_height {
+    max-width: 400px;
+    height: 150px;
+    border: 3px solid cornflowerblue;
+}
+
+div.position_relative {
+    position: relative;
+    top: 20px;
+    left: 100px;
+}
+div.absolute {
+    border: solid 2px crimson;     
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
