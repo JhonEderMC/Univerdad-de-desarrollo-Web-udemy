@@ -1,0 +1,12 @@
+h1 {
+    text-align: center;
+    color: chocolate;
+}
+
+div.content {
+    border: 2px solid greenyellow;
+    max-width: 30%;
+    height: 100px;
+    overflow: auto;
+    float: left;
+}
