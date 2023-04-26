@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+    color:chocolate
+}
+
+div.content {
+    max-width: 30%;
+    height: 20%;
+    overflow: auto;
+    margin: auto;
+    border: 3px dashed rebeccapurple;
+}
+span {
+    font-weight: bolder;
+    font-size: larger;
+    font-style: italic;
+    background-color: #a8dadc;
+    border: 1px solid #4579bd;
+    height: 50px; /* No afecta los elementos display inline */
+    padding: 5px; /* No afecta los elementos display inline */
+    display: inline-block;
+}
