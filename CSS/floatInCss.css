@@ -4,9 +4,28 @@ h1 {
 }
 
 div.content {
-    border: 2px solid greenyellow;
-    max-width: 30%;
+       max-width: 30%;
     height: 100px;
     overflow: auto;
+}
+div.content.border1 {
+    border: 2px dashed greenyellow;
+}
+div.content.border2 {
+    border: 2px dashed blueviolet;
+}
+div.content.border3 {
+    border: 2px dashed darkblue;
+}
+div.content.float-left {
     float: left;
+}
+div.content.float-right {
+    float: right;
+}
+div.content.clear-both {
+    clear: both;
+}
+div.content.margin-auto {
+    margin: auto;
 }
