@@ -20,3 +20,6 @@ div.content.descend-first-level > p {
 div.content.adjacent + p {
     background-color: #8d99ae;
 }
+div.content.general-or-brother ~ p {
+    background-color: #cbf3f0;
+}
