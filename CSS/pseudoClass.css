@@ -1,0 +1,30 @@
+h1 {
+    color: #e63946;
+    text-align: center;
+}
+
+div.content {
+    max-width: 30%;
+    max-height: 20%;
+    margin: auto;
+    border: solid 3px #a8dadc;
+    padding: 10px;
+    color: #457b9d;
+    text-align: center;
+}
+div.content:hover {
+    background-color: #457b9d;
+    color: #f1faee;
+}
+div.content.hidden p {
+    display: none;
+} 
+div.content.hidden:hover > p {
+    display: block;
+    background-color: #a8dadc;
+    color: #023e8a;
+    padding: 10px;
+}
+div.content.hidden p:first-child {
+    font-variant: small-caps;
+}
