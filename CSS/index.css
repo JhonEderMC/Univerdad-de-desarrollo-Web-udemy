@@ -15,5 +15,8 @@ div.content.descend-any-level p {
     background-color: #fdffb6;
 }
 div.content.descend-first-level > p {
-    background-color: #fdffb6;
+    background-color: #ffc6ff;
+}
+div.content.adjacent + p {
+    background-color: #8d99ae;
 }
