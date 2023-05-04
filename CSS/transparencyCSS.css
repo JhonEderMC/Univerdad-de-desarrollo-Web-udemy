@@ -1,0 +1,26 @@
+h1 {
+    color: #e63946;
+    text-align: center;
+}
+.content {
+    font-size: 1.6em;
+    font-weight: bold;
+    max-width: 30%;
+    max-height: 40%;    
+    margin: auto;
+    padding: 10px;
+    border: 2px solid #457b9d;
+}
+.content > p {
+    text-align: center;
+    color: #457b9d;
+    opacity: 0.5;    
+}
+.content > img {
+    display: block;
+    margin: auto;
+    opacity: 0.5;
+}
+.content > img:hover {
+    opacity: 1;
+}
