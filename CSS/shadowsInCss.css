@@ -1,7 +1,8 @@
 h1 {
     text-align: center;
     font-size: 3em;
-    text-shadow: 2px 2px 5px gray;
+    text-shadow: 2px 2px 5px #a8dadc;
+    color: #e64946;
 }
 .content {
     max-width: 30%;
@@ -10,4 +11,20 @@ h1 {
     border: solid 3px #a8dadc;
     padding: 15px;
     text-align: center;
+    box-shadow: -2px 2px 6px 2px grey;
+    color: #457b9d;
+    border-radius: 15px;
+}
+
+.content > div.header {
+    background-color: #4cc9f0;
+    opacity: 0.5;
+
+}
+.content > div.body {
+    padding-top: 2px;
+    font-size: 1.2em;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px rgb(177, 177, 177);
+
 }
