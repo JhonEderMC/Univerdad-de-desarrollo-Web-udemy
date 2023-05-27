@@ -1,0 +1,33 @@
+h1 {
+    text-align: center;
+    color: #e63046;
+    text-shadow: 2px 2px 2px #a8dadc;
+}
+
+div.content {
+    display: flex;
+    background-color: #560bad;
+}
+div.content >p {
+    background-color: #4895ef;
+    color: #f1faee;
+    margin: 20px;
+    padding: 15px;
+    font-size: 1.5em;
+}
+
+div.content.justify-center {
+    justify-content: center;
+}
+div.content.justify-flex-end {
+    justify-content: flex-end;
+}
+div.content.justify-space-around {
+    justify-content: space-around;
+}
+div.content.justify-space-between {
+    justify-content: space-between;
+}
+div.content.justify-space-evenly {
+    justify-content: space-evenly;
+}
