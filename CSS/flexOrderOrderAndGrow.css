@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+    color: #e63046;
+    text-shadow: 2px 2px 2px #a8dadc;
+}
+
+div.content {
+    display: flex;
+    background-color: #560bad;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    align-content: center; /*respecto a la parte baja y alta */
+    
+}
+div.content > p {
+    background-color: #4895ef;
+    color:#f1faee;
+    margin: 20px;
+    padding: 15px;
+    font-size: 1.5em;
+}
