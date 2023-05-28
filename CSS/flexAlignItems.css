@@ -1,0 +1,44 @@
+h1 {
+    text-align: center;
+    color: #e63046;
+    text-shadow: 2px 2px 2px #a8dadc;
+}
+
+div.content {
+    display: flex;
+    background-color: #560bad;
+    height: 200px;
+}
+
+div.content > p {
+    background-color: #4895ef;
+    color:#f1faee;
+    margin: 20px;
+    padding: 15px;
+    font-size: 1.5em;
+}
+
+div.content.align-items-flex-start {
+    align-items: flex-start;
+}
+div.content.align-items-flex- {
+    align-items: flex-end;
+}
+div.content.align-items-baseline {
+    align-items: baseline;
+}
+div.content.align-items-first-baseline {
+    align-items: first baseline;
+}
+div.content.align-items-center {
+    align-items: center;
+}
+div.content.align-items-end {
+    align-items: end;
+}
+div.content.align-items-safe {
+    align-items: safe;
+}
+div.content.align-items-stretch {
+    align-items:stretch ;
+}
