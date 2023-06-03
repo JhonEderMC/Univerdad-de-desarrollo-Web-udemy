@@ -43,3 +43,12 @@ console.log(`${stringTypeOf} variableUndefined: ${typeof variableUndefined}`);
 let variableNUll = null;
 console.log(`variableNull: ${variableNUll}`);
 console.log(`${stringTypeOf} variableNull: ${typeof variableNUll}`);
+
+//Array is an object
+let carBrands = ['BWM', 'AUDI', 'CHEVROLET', 'RENOULT', 'MERCEDES'];
+console.log(`carBrands: ${carBrands}`);
+console.log(`${stringTypeOf} carBrands: ${typeof(carBrands)}`);
+
+let emptyString = '';
+console.log(`emptyString: ${emptyString}`);
+console.log(`${stringTypeOf} emptyString: ${typeof(emptyString)}`);
