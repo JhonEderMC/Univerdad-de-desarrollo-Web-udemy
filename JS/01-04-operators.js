@@ -38,13 +38,13 @@ console.log(`modulus-> a % b: ${c}`);
 console.log(`modulus-> b % b: ${b%b}`);
 
 //increment
-console.log(`increment-> b++: ${b++}`);
+console.log(`pos-increment-> b++: ${b++}`);
 console.log(`b: ${b}`);
-console.log(`increment-> ++b: ${++b}`);
+console.log(`pre-increment-> ++b: ${++b}`);
 console.log(`b: ${b}`);
 
 //decrement
-console.log(`decrement-> b--: ${b--}`);
+console.log(`pos-decrement-> b--: ${b--}`);
 console.log(`b: ${b}`);
-console.log(`decrement-> --b: ${--b}`);
+console.log(`pre-decrement-> --b: ${--b}`);
 console.log(`b: ${b}`);
