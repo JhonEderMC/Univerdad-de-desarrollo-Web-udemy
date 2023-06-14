@@ -13,4 +13,4 @@ console.log(`y: ${y}`);
 let sum1 = 4 + 5*6/3;
 console.log(`4 + 5*6/3 = ${sum1}`);
 let sum2 = (4+5)*6/3;
-console.log(`(4+5)*6/3 = ${sum2}`)
+console.log(`(4+5)*6/3 = ${sum2}`);
