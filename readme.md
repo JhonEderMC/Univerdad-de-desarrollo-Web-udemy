@@ -3,3 +3,6 @@
 * While
 * Do While
 * For
+* break
+* continue
+* labels
