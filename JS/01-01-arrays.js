@@ -22,6 +22,13 @@ console.log()
     }
  }
 
+ //for of
+ console.log('\nFor of:');
+ for (const value of cars) {
+   console.log(value);
+ }
+
+
  console.log();
  //foeach
  console.log('ForEach:')
