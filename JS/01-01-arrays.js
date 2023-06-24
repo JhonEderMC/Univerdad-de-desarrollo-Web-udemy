@@ -6,17 +6,23 @@ console.table(cars);
  console.log(`cars[1]: ${cars[1]}`);
  console.log(`cars[3]: ${cars[3]}`);
 
+ console.log();
  //For regular
- console.log('Regular for:')
+ console.log('Regular for: ')
  for (let index = 0; index <cars.length; index++) {
-    const element = array[index];
+    const element = cars[index];
     console.log(element);    
  }
-
+console.log()
  //for in
- for (const key in object) {
-    if (Object.hasOwnProperty.call(object, key)) {
-        const element = object[key];
-        
+ console.log('For in: ');
+ for (const key in cars) {
+    if (cars.hasOwnProperty.call(cars, key)) {
+      console.log(cars[key]);        
     }
  }
+
+ console.log();
+ //foeach
+ console.log('ForEach:')
+ cars.forEach((car)=> console.log(car));
