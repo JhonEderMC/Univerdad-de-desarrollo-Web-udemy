@@ -3,14 +3,17 @@ const person = {
     _lastName: 'Perez',
     _age: 30,
     _email: 'luisperez@mail.com',
+    _language: 'es_col',
     get name() {return this._name},
     get lastName() {return this._lastName},
     get age() {return this._age},
     get email() {return this._email},
+    get lang() {return this._language.toUpperCase()},
     set name(name) {this._name = name},
     set lastName(lastName) {this._lastName = lastName},
     set age(age) {this._age = age},
-    set email(email) {this._email = email}
+    set email(email) {this._email = email},
+    set lang(language) {this._language = language.toLocaleLowerCase()}
 }
 
 //Print full object
@@ -28,3 +31,11 @@ person.name = 'Pedro';
 //set lastName = Toro
 person.lastName = 'Toro';
 console.log(`New full name: ${person.name} ${person.lastName}`);
+
+console.log(person._language);
+console.log(person.lang);
+console.log(person._language);
+person.lang = 'EN_US';
+console.log(person._language);
+console.log(person.lang);
+console.log(person._language);
