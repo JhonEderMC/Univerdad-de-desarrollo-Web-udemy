@@ -26,5 +26,14 @@ console.log('boolean2: ', boolean2);
 //array
 const array1 = new Array(1,2,3,4);
 const array2 = [1,2,3,4];
-console.log(array1);
-console.log(array2);
+console.log('array1: ', array1);
+console.log('array2: ', array2);
+
+
+//function
+const function1 = new Function();
+const function2 = function() {};
+const function3 = () => {};
+console.log('funtion1: ', function1);
+console.log('funtion2: ', function2);
+console.log('funtion3: ', function3);
