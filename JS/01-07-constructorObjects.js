@@ -11,3 +11,15 @@ const person2 = new Person('Lina', 'Guerra', 37, 'ligerr@mail.com');
 
 console.log('person1: ', person1);
 console.log('person2: ', person2);
+
+//methodds in constructor
+function Car(make, type, year) {
+    this.make = make;
+    this.type = type;
+    this.year = year;
+
+   this.showData = () => console.log(`make: ${this.make} type: ${this.type} year: ${this.year}`) 
+}
+
+const fordMustand = new Car('Ford', 'Sport', '1992');
+fordMustand.showData();
