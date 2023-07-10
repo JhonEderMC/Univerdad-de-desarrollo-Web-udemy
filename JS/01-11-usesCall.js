@@ -31,3 +31,18 @@ const person4 = {
     age: 30
 }
 console.log('person4.isAgeOf: ', person3.isAgeOf.call(person4));
+
+//Call using parameters
+const car1 = {
+    model: 'i3',
+    make: 'BMW',
+    showData: function (type, year) {
+        return `make: ${this.make}, model: ${this.model}, type: ${type}, year: ${year}`
+    }
+}
+const car2 = {
+    model: '4',
+    make: 'Renoult'
+}
+console.log(car1.showData());
+console.log(car1.showData.call(car2, 'low cost', '1994'));
