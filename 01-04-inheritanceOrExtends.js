@@ -20,6 +20,8 @@ class Person {
     set lastName(lastName) {
         this._lastName = lastName;
     }
+
+    printBasicData = ()=> `name: ${this._name} lastName: ${this._lastName}`
 }
 
 //Second We are going to create Object Employee
@@ -56,3 +58,7 @@ console.log(employee.name);
 
 const x = new Employee();
 console.log(x);
+
+//Extends methods
+console.log(person.printBasicData());
+console.log(employee.printBasicData());
