@@ -38,3 +38,32 @@ class Person {
 
 const person = new Person('Jaime', 'Palacios', 30);
 console.log(person.toString());
+
+class Employee extends Person {
+
+    static countEmployee = 0;
+
+    constructor(name, lastName, age, salary) {
+        super(name, lastName, age);
+        this._salary = salary;
+        this._idEmployee = ++Employee.countEmployee;
+    }
+
+
+    get idEmployee() {
+        return this._idEmployee;
+    }
+    get salary() {
+        return this._salary;
+    }
+    set salary(salary) {
+        this._salary = salary;
+    }
+
+    toString() {
+        return `${super.toString()} idEmployee: ${this.idEmployee} salary: ${this.salary}`; 
+    }
+}
+
+const employee = new Employee('Sara', 'Perez', 33, 3000);
+console.log(employee.toString());
