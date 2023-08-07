@@ -1,6 +1,7 @@
 class Product {
 
     static countProducts = 0;
+    
     _name = undefined;
     _price = undefined;
     _idProduct = 0;
@@ -8,7 +9,7 @@ class Product {
     constructor(name, price){
         this._name = name;
         this._price = price;
-        this._idProduct = Product.countProducts++;
+        this._idProduct = ++Product.countProducts;
     }
 
     get idProduct() {
