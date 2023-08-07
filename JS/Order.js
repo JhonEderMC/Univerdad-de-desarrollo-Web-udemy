@@ -33,8 +33,9 @@ class Order {
     }
 
     showOrder() {
-
+        return `idOrden: ${this.idOrder} countProductsAdded: ${this._countProductsAdded}
+        totalSele: ${this.calculateTotal()} 
+        products: ${this._products.forEach((p) => p.toString() + ' ')}`
     }
-
 
 }
