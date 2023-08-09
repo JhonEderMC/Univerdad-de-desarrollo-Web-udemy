@@ -47,4 +47,9 @@ class Computer {
     set mouse(mouse) {
         this._mouse = mouse;
     }
+
+    toString() {
+        `idComputer: ${this.idComputer}\nname: ${this.name}\nmonitor: ${this.monitor.toString()}\nkeyBoard: ${this.keyBoard.toString()}\n mouse: ${this.mouse.toString()}`;
+    }
 }
+
