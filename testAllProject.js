@@ -1,8 +1,5 @@
 class InputDevice {
 
-    _typeInput = undefined;
-    _brand = undefined;
-
     constructor(typeInput, brand) {
         this._typeInput = typeInput;
         this._brand = brand;
@@ -30,8 +27,6 @@ class Mouse extends InputDevice {
 
     static countMouses = 0;
 
-    _idMouse = 0;
-
     constructor(typeInput, brand) {
         super(typeInput, brand);
         this._idMouse = ++Mouse.countMouses;        
@@ -47,15 +42,13 @@ class Mouse extends InputDevice {
 
 }
 
-class keyBoard extends InputDevice {
+class KeyBoard extends InputDevice {
 
-    static countKeyBoards = 0;
-
-    _idKeyBoard = 0;
+    static countKeyBoards = 0;   
 
     constructor(typeInput, brand) {
         super(typeInput, brand);
-        this._idKeyBoard = ++keyBoard.countKeyBoards;
+        this._idKeyBoard = ++KeyBoard.countKeyBoards;
     }
 
     get idKeyBoard() {
@@ -73,11 +66,7 @@ class Monitor {
 
     static countMonitors = 0;
 
-    _idMonitor = 0;
-    _brand = undefined;
-    _size = undefined;
-
-    constructor(brand, size) {
+   constructor(brand, size) {
         this._brand = brand;
         this._size = size;
         this._idMonitor = ++Monitor.countMonitors;        
@@ -110,15 +99,14 @@ class Monitor {
 
 class Computer {
 
-    static countComputers = 0;
-
-    _idComputer = 0;
-    _name = undefined;
-    _monitor = undefined;
-    _keyBoard = undefined;
-    _mouse = undefined;
+    static countComputers = 0;   
 
     constructor() {
+        this._idComputer = 0;
+        this._name = null;
+        this._monitor = null;
+        this._keyBoard = null;
+        this._mouse = null;
         this._idComputer = ++Computer.countComputers;
     }
 
@@ -127,7 +115,7 @@ class Computer {
     }
 
     get name() {
-        this._name;
+         return this._name;
     }
 
     set name(name) {
@@ -143,7 +131,7 @@ class Computer {
     }
 
     get keyBoard() {
-        this._keyBoard;
+       return this._keyBoard;
     }
 
     set keyBoard(keyBoard) {
@@ -151,18 +139,31 @@ class Computer {
     }
 
     get mouse() {
-        this._mouse;
+       return this._mouse;
     }
 
     set mouse(mouse) {
         this._mouse = mouse;
     }
+
+    toString() {
+       return `idComputer: ${this.idComputer}\nname: ${this.name}\nmonitor: ${this.monitor.toString()}\nkeyBoard: ${this.keyBoard.toString()}\nmouse: ${this.mouse.toString()}`;
+    }
 }
 
-//Test
-const monitor = new Monitor('LG', '22');
-console.log(monitor.toString());
 
 //Test
+const keyBoard1 = new KeyBoard('z100', 'Razer');
+//console.log(keyBoard1.toString());
 const mouse = new Mouse('S03', 'Razer');
-console.log(mouse.toString());
+//console.log(mouse.toString());
+
+const monitor = new Monitor('LG', '22');
+//console.log(monitor.toString());
+
+const computer = new Computer();
+computer.name = 'Asus Pro 22';
+computer.monitor = monitor;
+computer.keyBoard = keyBoard1;
+computer.mouse = mouse;
+console.log(computer.toString());

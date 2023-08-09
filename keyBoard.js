@@ -1,4 +1,4 @@
-class keyBoard extends InputDevice {
+class KeyBoard extends InputDevice {
 
     static countKeyBoards = 0;
 
@@ -20,4 +20,4 @@ class keyBoard extends InputDevice {
 }
 
 //Test 
-const keyBoard = new keyBoard('z100', 'Razer');
+const keyBoard = new KeyBoard('z100', 'Razer');
