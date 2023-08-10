@@ -151,6 +151,33 @@ class Computer {
     }
 }
 
+class Order {
+
+    static countOrders = 0;
+
+    constructor() {
+        this._idOrder = ++Order.countOrders;
+        this._computers = [];        
+    }
+
+    get idOrder() {
+        return this._idOrder;
+    }
+
+    get computers() {
+        return this._computers;
+    }
+
+    addComputer(computer) {
+        this._computers.push(computer);
+    }
+
+    showOrder() {
+    return `idOrden: ${this.idOrder}\ncomputers: ${this.computers.reduce((prev, curr)=> prev.toString() + '   ' + curr.toString())}`
+    }
+    
+ }
+
 
 //Test
 const keyBoard1 = new KeyBoard('z100', 'Razer');
@@ -166,4 +193,8 @@ computer.name = 'Asus Pro 22';
 computer.monitor = monitor;
 computer.keyBoard = keyBoard1;
 computer.mouse = mouse;
-console.log(computer.toString());
+//console.log(computer.toString());
+
+const order = new Order();
+order.addComputer(computer);
+console.log(order.showOrder());
