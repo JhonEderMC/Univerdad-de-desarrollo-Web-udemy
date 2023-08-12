@@ -173,7 +173,7 @@ class Order {
     }
 
     showOrder() {
-    return `idOrden: ${this.idOrder}\ncomputers: ${this.computers.reduce((prev, curr)=> prev.toString() + '   ' + curr.toString())}`
+    return `idOrden: ${this.idOrder}\ncomputers: ${this.computers.reduce((prev, curr)=> prev.toString() + '\n' + curr.toString())}`
     }
     
  }
@@ -194,7 +194,13 @@ computer.monitor = monitor;
 computer.keyBoard = keyBoard1;
 computer.mouse = mouse;
 //console.log(computer.toString());
+const computer2 = new Computer();
+computer2.name = 'Leonov';
+computer2.monitor = monitor;
+computer2.keyBoard = keyBoard1;
+computer2.mouse = mouse;
 
 const order = new Order();
 order.addComputer(computer);
+order.addComputer(computer2)
 console.log(order.showOrder());
