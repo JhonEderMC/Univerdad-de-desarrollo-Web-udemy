@@ -1,4 +1,4 @@
-"strict mode"; //here define strict mode
+"use strict"; //here define strict mode
 
-console.log(x); //This is an error, x isn't define
+x = 10;//This is an error, x isn't define
 
