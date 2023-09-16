@@ -6,10 +6,17 @@
     <title>DOM with JS</title>
 </head>
 <body>
-    <h1>DOM with JS</h1>
-    <p>Welcome!</p>
+    <h1 id="title">DOM with JS</h1>
+    <p id="paragraph">Welcome!</p>
+
     <script>
         console.log('Hello from JS')
+        const title = document.getElementById('title');
+        const paragraph = document.getElementById('paragraph');
+        console.log(title);
+        console.log(title.innerHTML);
+        console.log(paragraph);
+        console.log(paragraph.innerHTML);
     </script>
     
 </body>
