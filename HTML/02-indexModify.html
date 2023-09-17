@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM with JS</title>
+</head>
+<body>
+    <h1 id="title">Dom with JS</h1>
+    <p id="paragraph">Welcome!</p>
+
+    <script>
+        const title = document.getElementById("title");
+        const paragraph = document.getElementById("paragraph");
+        console.log(`Title: ${title.innerText}`);
+        console.log(`Paragraph: ${paragraph.innerText}`);
+        //Modify
+        title.innerText = 'New Text modify from JS';
+        paragraph.innerText = "New paragraph modify from JS";
+    </script>
+
+    
+</body>
+</html>
