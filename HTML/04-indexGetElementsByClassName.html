@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .blueColor{
+            color: blue;
+        }
+    </style>
+    <title>DOM HTML with JS</title>
+</head>
+<body>
+    <h1>DOM HTML With JS</h1>
+    <p class="blueColor">Pragraph 1</p>
+    <p class="blueColor">This a text paragraph 2</p>
+    <p class="blueColor">Tis a text paragraph 3</p>
+
+    <script>
+        const paragraphes = document.getElementsByClassName('blueColor');
+        console.log(paragraphes);
+
+        for (const iterator of paragraphes) {
+            console.log(iterator);            
+        }
+    </script>
+</body>
+</html>
