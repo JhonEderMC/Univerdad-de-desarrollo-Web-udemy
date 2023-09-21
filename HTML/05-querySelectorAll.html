@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .blueColor{
+            color: blue;
+        }
+        .redColor {
+            color: red;
+        }
+    </style>
+    <title>DOM HTML with JS</title>
+</head>
+<body>
+    <h1 class="redColor">DOM HTML With JS</h1>
+    <p class="blueColor">Pragraph 1</p>
+    <p class="blueColor">This a text paragraph 2</p>
+    <p class="blueColor">Tis a text paragraph 3</p>
+
+    <script>
+        const paragraphes = document.querySelectorAll('p.blueColor');
+        console.log(paragraphes);
+
+        for (const iterator of paragraphes) {
+            console.log(iterator);            
+        }
+
+        const h1 = document.querySelectorAll('h1.redColor');
+        console.log(h1);
+    </script>
+</body>
+</html>
