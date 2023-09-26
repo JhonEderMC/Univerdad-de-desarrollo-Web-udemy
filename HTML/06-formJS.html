@@ -24,13 +24,15 @@
             const form = document.forms['form'];
             console.log(form);
             console.log('Elementos formulario:')
+            console.log(`Name: ${form['name'].value}`);
+            console.log(`LastName: ${form['lastName'].value}`);
             let fullName = '';
             for (const element of form) {
                 console.log(element);
                 fullName+= ' '+element.value;                
             }
 
-            console.log(`fullaName: ${fullName}`);
+            console.log(`fullName: ${fullName}`);
             const divFullname = document.getElementById('divFullName');
             divFullname.innerHTML = fullName;
             
