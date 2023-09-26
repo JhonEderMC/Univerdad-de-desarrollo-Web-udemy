@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+    <h1>Form with JS</h1>
+    <form id="form">
+        <label for="user">User:</label>
+        <input type="text" name="user" id="user">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <br>
+        <label for="password">Password: </label>
+        <input type="password" name="password" id="password"> 
+    </form>
+    <div id="divTextLogin"> </div>
+    <button onclick="login()">Login</button>
+
+    <script>
+
+        function login() {
+            const form = document.forms['form'];
+        console.log('Form:');
+        console.log(form)
+        const divTextLogin = document.getElementById('divTextLogin');
+        divTextLogin.innerHTML = `<h2>Login data</h2>
+        <p><b>User:</b>${form['user'].value}</p>
+        <p><b>Email:</b>${form['email'].value}<p>
+        <p><b>Password:</b>${form['password'].value}</p>`;            
+        }
+          
+    </script>
+    
+</body>
+</html>
