@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is a title</title>
+</head>
+<body>
+    <h1 id="h1Title">This a title</h1>
+    <label for="title">Enter a title</label>
+    <input type="text" id="title" placeholder="Enter a title">
+    <br>
+    <button onclick="changeTitle()">Change title</button>
+
+    <script>
+        function changeTitle() {
+            const inputTitle = document.getElementById('title');
+            const htmlTitle = document.getElementById('h1Title');
+            console.log(inputTitle);
+            console.log(htmlTitle);
+            console.log(inputTitle.value);
+            console.log(htmlTitle.innerText);
+
+            htmlTitle.innerText = inputTitle.value;            
+        }
+    </script>
+</body>
+</html>
