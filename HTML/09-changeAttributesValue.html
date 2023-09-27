@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Managent DOM with JS</title>
+</head>
+<body>
+    <h1>Managent DOM with JS</h1>
+    <button onclick="show()">Show</button>
+    <br>
+    <img id="image" src="https://niveloculto.com/wp-content/uploads/2016/05/gamer-portada.jpg" alt="fat gamer 1">
+    <script>
+        function show()  {
+            const urlFatGamer2 = "https://images3.memedroid.com/images/UPLOADED765/633cca17ee12f.webp";
+            const image = document.getElementById('image');
+            console.log(image);
+            console.log(image.src);
+            image.src = urlFatGamer2;
+        }
+    </script>
+</body>
+</html>
