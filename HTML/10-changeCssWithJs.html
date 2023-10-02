@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change CSS with JS</title>
+</head>
+<body>
+    <h1 id="title">Change CSS with JS</h1>
+    <button onclick="changeCss()">Change CSS</button>
+
+    <script>
+        function changeCss() {
+            const title = document.getElementById("title");
+            console.log(title);
+            title.style.color = "#ff006e"            
+        }
+
+    </script>
+</body>
+</html>
