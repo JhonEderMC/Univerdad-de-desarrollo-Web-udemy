@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onclick event</title>
+</head>
+<body>
+    <h1 id="title">Title Onclick event</h1>
+
+    <script>
+        const TITLE_ONE = 'Title Onclick event';
+        const TITLE_TWO = 'This text was changed from JS';
+        const title = document.getElementById("title");
+        console.log(title);
+        changeTitleText = () => this.title.innerHTML = (this.title.innerHTML !==TITLE_TWO) ? TITLE_TWO : TITLE_ONE ;
+        title.onclick = changeTitleText;
+
+       
+    </script>
+</body>
+</html>
