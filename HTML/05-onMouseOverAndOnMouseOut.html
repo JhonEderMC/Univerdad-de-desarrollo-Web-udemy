@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Mouse Over and On mouse out</title>
+</head>
+<body>
+    <h1 onmouseover="onMouseOver(this)"  onmouseout="onMouseOut(this)" style="color: red;">On Mouse over and on Mouse Out</h1>
+
+    <script>
+        function onMouseOver(title) {
+            console.log(title);
+            title.style.color = "red";
+        }
+
+        function onMouseOut(title) {
+            title.style.color = "blue";
+            console.log(title);
+        }
+    </script>
+</body>
+</html>
