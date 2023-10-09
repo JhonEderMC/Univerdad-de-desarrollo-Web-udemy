@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onload Event</title>
+</head>
+<body onload="init()">
+    <h1>Onload Event</h1>
+    <div id="divShowStatusCookies"></div>
+
+    <script>
+        init = () =>{ 
+            alert('By accesing the webside')
+            let text =  navigator.cookieEnabled 
+                ? 'The cookies are enabled'
+                : 'The coockies are disabled';
+            const divShowStatusCookies = document.getElementById('divShowStatusCookies');
+            divShowStatusCookies.innerHTML = text;
+            
+        }
+    </script>
+</body>
+</html>
