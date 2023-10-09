@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On change event</title>
+</head>
+<body>
+    <h1>OnChange event</h1>
+    Name: <input type="text" id="name" onchange="changeUpperCase(this)">
+
+    <script>
+        function   changeUpperCase(name) {
+            //const name = document.getElementById("name");
+            console.log(name.value);
+            name.value = name.value.toUpperCase();
+        }
+    </script>
+    
+</body>
+</html>
