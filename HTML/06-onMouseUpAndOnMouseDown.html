@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Mouse Up and On Mouse Down</title>
+</head>
+<body>
+    <h1 onmouseup="onMouseUp(this)"  onmousedown="onMouseDown(this)" onclick="onClick()">On Mouse Up and On Mouse Down</h1>
+
+    <script>
+        function  onMouseUp(htmlElement) {
+            console.log('On Mouse Up');
+            htmlElement.style.color = "#ff006e";
+        }
+
+        function onMouseDown(htmlElement) {
+            console.log('On Mouse Down')
+            htmlElement.style.color = "#003049";
+        }
+
+        function onClick() {
+            console.log('On click');
+        }
+
+    </script>
+    
+</body>
+</html>
