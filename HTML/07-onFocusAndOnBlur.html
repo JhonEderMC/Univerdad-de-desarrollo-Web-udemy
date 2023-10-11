@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Focus and On blur</title>
+</head>
+<body>
+    <h1>On Focus and On Blur</h1>
+    Name: <input type="text" placeholder="Entar a name" onfocus="onInputFocus(this)" onblur="onInputBlur(this)">
+    <br><br>
+    LastName: <input type="text" placeholder="Enter a lastName" onfocus="onInputFocus(this)" onblur="onInputBlur(this)">
+
+    <script>
+        function onInputFocus(input) {
+            console.log('OnFoucs');
+            input.style.background = '#48cae4'
+            //console.log(input);            
+        }
+
+        function onInputBlur(input) {
+            console.log('OnBlur');
+            input.style.background = "white";
+        }
+    </script>
+</body>
+</html>
