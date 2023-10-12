@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Event Listener arrow Functions</title>
+</head>
+<body>
+    <h1>Add Event Listener Arrow Functions</h1>
+    Name: 
+    <div>
+        <input type="text" id="name" placeholder="Enter a name">
+    </div>
+    Last Name:
+    <div>
+        <input type="text" id="lastName" placeholder="Enter a LastName">
+    </div>
+
+    <script>
+         const onInputFocus = (event) => {
+            console.log('OnFoucs');
+            event.target.style.background = '#48cae4';
+        }
+
+        const onInputBlur = (event) => {
+            console.log('OnBlur');
+            event.target.style.background = 'white';
+        }  
+
+        const name = document.getElementById('name');
+        const lastName = document.getElementById('lastName');
+
+        name.addEventListener('focus', onInputFocus);
+        name.addEventListener('blur', onInputBlur);
+        lastName.addEventListener('focus', onInputFocus);
+        lastName.addEventListener('blur', onInputBlur);
+             
+    </script>
+</body>
+</html>
