@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delegacion of Events</title>
+</head>
+<body>
+    <h1>Delegacion of Events</h1>
+        <form id="form">
+                Name: 
+            <div>
+                <input type="text" id="name" placeholder="Enter a name">
+            </div>
+            Last Name:
+            <div>
+                <input type="text" id="lastName" placeholder="Enter a LastName">
+            </div>
+        </form>
+
+        <script>
+            const form = document.getElementById('form');
+
+            form.addEventListener('focus', (event)=> event.target.style.background ='#48cae4', true );
+            form.addEventListener('blur', (event) => event.target.style.background = 'white', true);
+        </script>
+</body>
+</html>
