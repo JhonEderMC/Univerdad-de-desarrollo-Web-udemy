@@ -10,16 +10,19 @@
 
     <div class="container">
         <h1>Calculator</h1>
+
+        <form id="form">
+            <div class="col-3 mb-2">
+                <label for="number1">Number 1:</label>
+                <input type="number" class="form-control" id="number1" placeholder="Enter number 1">        
+            </div>
+            <div class="col-3 mb-2">
+                <label for="number2">Number 2:</label>
+                <input type="number" class="form-control" id="number2" placeholder="Enter number 2">
+            </div>
+            <button type="button" class="btn btn-primary" onclick="sum()">Sum</button>
+        </form>
    
-        <div class="col-3">
-            <label for="number1">Number 1:</label>
-            <input type="number" class="form-control" id="number1" placeholder="Enter number 1">        
-        </div>
-        <div class="col-3 mb-2">
-            <label for="number2">Number 2:</label>
-            <input type="number" class="form-control" id="number2" placeholder="Enter number 2">
-        </div>
-        <button type="button" class="btn btn-primary" onclick="sum()">Sum</button>
     </div>
     
 
