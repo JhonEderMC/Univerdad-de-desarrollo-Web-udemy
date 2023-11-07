@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.limpiarEstilos::after {
+.clearEstyles::after {
     content: "";
     display: table;
     clear: both;
@@ -19,7 +19,7 @@ body {
     font-weight: 400;
 }
 
-.derecha { float: right; }
+.right { float: right; }
 .rojo { color: #FF5049 !important; }
 .rojofocus:focus { border: 1px solid #FF5049 !important; }
 
