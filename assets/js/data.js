@@ -21,5 +21,4 @@ class Data {
         this._description = description;
     }
 
-
 }
