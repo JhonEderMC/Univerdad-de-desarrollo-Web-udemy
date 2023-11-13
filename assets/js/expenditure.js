@@ -1,4 +1,4 @@
-class Expenditure {
+class Expenditure extends Data {
 
     static countExpenditure = 0;
 
