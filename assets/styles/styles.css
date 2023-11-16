@@ -211,7 +211,7 @@ h2 {
     transition: transform 0.3s;
 }
 
-.elemento_porcentaje {
+.element_porcentage {
     float: left;
     margin-left: 20px;
     transition: transform 0.3s;
@@ -229,7 +229,7 @@ h2 {
 }
 
 .expenditure .element_value,
-.expenditure .elemento_porcentaje,
+.expenditure .element_porcentage,
 .expenditure .element_delete--btn {
     color: #FF5049;
 }
@@ -255,4 +255,4 @@ h2 {
 
 .element:hover .element_delete--btn { display: block; }
 .element:hover .element_value { transform: translateX(-20px); }
-.element:hover .elemento_porcentaje { transform: translateX(-20px); }
+.element:hover .element_porcentage { transform: translateX(-20px); }
