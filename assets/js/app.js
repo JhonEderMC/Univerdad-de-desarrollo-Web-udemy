@@ -6,12 +6,12 @@ let expenditurePorcentage ='';
 
 
 
-const income = [
+let income = [
     new Income(2100, 'Salary' ),
-    new Income(1500, 'Sell car')
+    new Income(1500, 'Sell car'),
 ];
 
-const expenditures = [
+let expenditures = [
     new Expenditure(900, 'Rent house'),
     new Expenditure(400, 'Clothes')
 ];
@@ -25,10 +25,10 @@ const loadApp = () => {
 
 
 const loadHead = () => {
-    totalIncome = income.reduce((prev, curr) => prev.value + curr.value);
-    totalExpenditure = expenditures.reduce((prev, curr) => prev.value + curr.value);
+    totalIncome = sumAll(income);
+    totalExpenditure = sumAll(expenditures);
     budget = totalIncome - totalExpenditure;
-    expenditurePorcentage =(((totalExpenditure)/budget)*100)    
+    expenditurePorcentage =(((totalExpenditure)/totalIncome)*100)    
 
     document.getElementById('income').innerHTML = `+ ${formatCurrency(totalIncome)}`;
     document.getElementById('expenditure').innerHTML = `- ${formatCurrency(totalExpenditure)}` ;
@@ -39,6 +39,17 @@ const loadHead = () => {
     console.log(totalExpenditure);
     console.log(expenditurePorcentage);
 
+}
+
+const sumAll = (vect) => {
+    let sum = 0;
+    if(vect.length == 1) {
+        sum = vect[0].value;
+    }else if (vect.length > 1) {
+        sum = vect.reduce((prev, curr) => prev.value + curr.value);
+    }
+    
+    return sum;
 }
 
 const formatCurrency = (number) => Number(number).toLocaleString('en-US', {style: 'currency', currency: 'USD', minimumFractionDigits:2});
@@ -62,7 +73,7 @@ function createHTMLincome(income) {
                     <div class="right clearEstyles">
                         <div class="element_value">+ ${formatCurrency(income.value)}</div>
                         <div class="element_delete">
-                            <button class="element_delete--btn">
+                            <button class="element_delete--btn" onclick="deleteIcome(${income.id})">
                                 <ion-icon name="close-circle-outline"></ion-icon>
                             </button>
                         </div>
@@ -71,14 +82,14 @@ function createHTMLincome(income) {
 }
 
 function createExpenditureHTML(expenditure) {
-    const percent = (expenditure.value/budget)*100;
+    const percent = (expenditure.value/totalExpenditure)*100;
     return `    <div class="element clearEstyles">
                     <div class="element_description">${expenditure.description}</div>
                     <div class="right clearEstyles">
                         <div class="element_value">- ${formatCurrency(expenditure.value)}</div>
                         <div class="element_porcentage">${formatPercent(percent)}%</div>
                         <div class="element_delete">
-                            <button class="element_delete--btn">
+                            <button class="element_delete--btn" onclick="deleteExpenditure(${expenditure.id})">
                                 <ion-icon name="close-circle-outline"></ion-icon>
                             </button>
                         </div>
@@ -86,4 +97,18 @@ function createExpenditureHTML(expenditure) {
                 </div>`
 }
 
+
+const deleteIcome = (id) => {
+ income = deletElementByIdArray(id, income);
+ loadApp();   
+}
+
+const deleteExpenditure = (id) => {
+    expenditures = deletElementByIdArray(id, expenditures);   
+    loadApp();
+}
+
+const deletElementByIdArray = (id, array) =>  {
+    return array.filter((element)=> element.id !== id);
+}
 
