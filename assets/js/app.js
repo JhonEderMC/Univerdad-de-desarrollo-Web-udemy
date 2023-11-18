@@ -60,7 +60,7 @@ function createHTMLincome(income) {
     return `   <div class="element clearEstyles">
                     <div class="element_description">${income.description}</div>
                     <div class="right clearEstyles">
-                        <div class="element_value">${formatCurrency(income.value)}</div>
+                        <div class="element_value">+ ${formatCurrency(income.value)}</div>
                         <div class="element_delete">
                             <button class="element_delete--btn">
                                 <ion-icon name="close-circle-outline"></ion-icon>
@@ -75,7 +75,7 @@ function createExpenditureHTML(expenditure) {
     return `    <div class="element clearEstyles">
                     <div class="element_description">${expenditure.description}</div>
                     <div class="right clearEstyles">
-                        <div class="element_value">${formatCurrency(expenditure.value)}</div>
+                        <div class="element_value">- ${formatCurrency(expenditure.value)}</div>
                         <div class="element_porcentage">${formatPercent(percent)}%</div>
                         <div class="element_delete">
                             <button class="element_delete--btn">
