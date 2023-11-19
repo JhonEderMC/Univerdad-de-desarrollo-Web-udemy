@@ -27,6 +27,22 @@
             </div>
         </div>
     </div>
+    
+    <form id="form">
+        <div class="add">
+            <div class="add_content">
+                <select name="add_type" id="type" class="add_type">
+                    <option value="income" selected>+</option>
+                    <option value="expenditure">-</option>
+                </select>
+                <input type="text" name="description" id="description" placeholder="Add description" class="add_description">
+                <input type="number" name="value" id="value" placeholder="Value" step="any" class="add_value">
+                <button type="button" class="add_btn" id="add_btn" onclick="addData()">
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                </button>
+            </div>
+        </div>
+    </form>
 
     <div class="content clearEstyles">
         <div class="income">
