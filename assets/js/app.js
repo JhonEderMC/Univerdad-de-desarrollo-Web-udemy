@@ -129,10 +129,12 @@ const addData = () => {
     const description = form['description'].value;
     const value = Number(form['value'].value);
     
-    if(type === TYPE_INCOME) {
-        income.push(new Income(value, description));
-    } else if(type === TYPE_EXPENDITURE) {
-        expenditures.push(new Expenditure(value,description));
+    if(value && description && type) {
+        if(type === TYPE_INCOME) {
+            income.push(new Income(value, description));
+        } else if(type === TYPE_EXPENDITURE) {
+            expenditures.push(new Expenditure(value,description));
+        }
     }
     totalIncome = 0;
     loadApp();
