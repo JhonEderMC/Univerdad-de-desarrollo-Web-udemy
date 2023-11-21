@@ -1,3 +1,6 @@
+const TYPE_INCOME = 'income';
+const TYPE_EXPENDITURE = 'expenditure'; 
+
 let totalIncome = '';
 let totalExpenditure = '';
 let budget = '';
@@ -46,7 +49,15 @@ const sumAll = (vect) => {
     if(vect.length == 1) {
         sum = vect[0].value;
     }else if (vect.length > 1) {
-        sum = vect.reduce((prev, curr) => prev.value + curr.value);
+        sum = vect.reduce((prev, curr) =>{
+            if(!isNaN(prev.value)) {
+                return prev.value + curr.value;
+            } else if(!isNaN(prev)) {
+                return prev + curr.value;
+            }else {
+                return 0;
+            }
+        });
     }
     
     return sum;
@@ -110,5 +121,20 @@ const deleteExpenditure = (id) => {
 
 const deletElementByIdArray = (id, array) =>  {
     return array.filter((element)=> element.id !== id);
+}
+
+const addData = () => {
+    const form = document.forms['form'];    
+    const type = form['type'].value;
+    const description = form['description'].value;
+    const value = Number(form['value'].value);
+    
+    if(type === TYPE_INCOME) {
+        income.push(new Income(value, description));
+    } else if(type === TYPE_EXPENDITURE) {
+        expenditures.push(new Expenditure(value,description));
+    }
+    totalIncome = 0;
+    loadApp();
 }
 
